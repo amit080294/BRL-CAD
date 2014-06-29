@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo Content-type: text/html
+echo
+
 # removing old files.
 rm -f ballbearing.g
 rm -f rt*
