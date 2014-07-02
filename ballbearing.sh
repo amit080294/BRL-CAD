@@ -1,15 +1,20 @@
 #!/bin/bash
 
 echo Content-type: text/html
+echo 
 echo
 
+
 # removing old files.
-rm -f ballbearing.g
+rm -f ballbearing.g 
 rm -f rt*
+rm -f *.pix
+rm -f temp*
+rm -f ../../cgi-images/*
 
 rt=rtFile
 
-cat <<EOF | mged -c ballbearing.g
+cat <<EOF | env /usr/brlcad/dev-7.25.0/bin//mged -c ballbearing.g
 in s0 rcc 0 0 0 .6 0 0 2.2
 in s1 rcc 0 0 0 .6 0 0 2
 in s2 rcc 0 0 0 .6 0 0 1.4
@@ -32,18 +37,35 @@ ae 25 35
 saveview $rt
 EOF
 
-# give executable permissions to raytrace file.
-chmod 755 $rt
+# adding "env /usr/brlcad/bin/" in the beginning of 2nd line of raytracing file
+# and sending output to temporary file.
+sed '2cenv /usr/brlcad/dev-7.25.0/bin//rt -M \\' $rt > tempFile1
 
-# executing raytrace file. This will produce raw image in .pix format
-# and a log
+
+# removing original raytracing file.
+rm $rt
+
+# changing name of temporary file to that of original file.
+mv tempFile1 $rt
+
+
+# give executable permissions to raytrace file.
+chmod 777 $rt
+
+# executing raytrace file. This will produce raw image in .pix tormat and a log
 #file.
 sh $rt
 
 # converting .pix file to png image using BRLCAD commands.
-pix-png < $rt.pix > $rt.png
+env /usr/brlcad/dev-7.25.0/bin//pix-png < $rt.pix > $rt.png
 
-# open png image in a frame buffer. Currently not required.
-#env /usr/brlcad/bin/png-fb $rt.png
 
-shotwell $rt.png
+  
+# copying final image to public_html for displaying on browser.
+cp $rt.png ../cgi-images/
+
+
+# using html <img src tag, display image on browser.
+echo "<img src = ../cgi-images/$rt.png>"
+
+echo "<h1>Ballbearing</h1>"
