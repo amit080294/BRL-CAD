@@ -1,0 +1,150 @@
+#!/bin/sh
+env /usr/brlcad/dev-7.25.0/bin//rt -M \
+ -o sideview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> sideview.log\
+ <<EOF
+viewsize 8.80000000000000e+02;
+orientation 7.07106781186548e-01 0.00000000000000e+00 0.00000000000000e+00 7.07106781186547e-01;
+eye_pt 3.00000000000000e+01 -1.52420471066061e+03 0.00000000000000e+00;
+start 0; clean;
+end;
+
+EOF
+#!/bin/sh
+rt -M \
+ -o sideview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> sideview.log\
+ <<EOF
+viewsize 8.80000000000000e+02;
+orientation 7.07106781186548e-01 0.00000000000000e+00 0.00000000000000e+00 7.07106781186547e-01;
+eye_pt 1.00000000000000e+01 -1.52420471066061e+03 0.00000000000000e+00;
+start 0; clean;
+end;
+
+EOF
+#!/bin/sh
+rt -M \
+ -o sideview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> sideview.log\
+ <<EOF
+viewsize 8.80000000000000e+02;
+orientation 7.07106781186548e-01 0.00000000000000e+00 0.00000000000000e+00 7.07106781186547e-01;
+eye_pt 3.00000000000000e+01 -1.52420471066061e+03 0.00000000000000e+00;
+start 0; clean;
+end;
+
+EOF
+#!/bin/sh
+rt -M \
+ -o sideview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> sideview.log\
+ <<EOF
+viewsize 8.80000000000000e+02;
+orientation 7.07106781186548e-01 0.00000000000000e+00 0.00000000000000e+00 7.07106781186547e-01;
+eye_pt 1.00000000000000e+01 -1.52420471066061e+03 0.00000000000000e+00;
+start 0; clean;
+end;
+
+EOF
+#!/bin/sh
+rt -M \
+ -o sideview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> sideview.log\
+ <<EOF
+viewsize 8.80000000000000e+02;
+orientation 7.07106781186548e-01 0.00000000000000e+00 0.00000000000000e+00 7.07106781186547e-01;
+eye_pt 1.00000000000000e+01 -1.52420471066061e+03 0.00000000000000e+00;
+start 0; clean;
+end;
+
+EOF
+#!/bin/sh
+rt -M \
+ -o sideview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> sideview.log\
+ <<EOF
+viewsize 1.28000000000000e+03;
+orientation 7.07106781186548e-01 0.00000000000000e+00 0.00000000000000e+00 7.07106781186547e-01;
+eye_pt 4.00000000000000e+01 -2.21702503368816e+03 0.00000000000000e+00;
+start 0; clean;
+end;
+
+EOF
+#!/bin/sh
+rt -M \
+ -o sideview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> sideview.log\
+ <<EOF
+viewsize 8.80000000000000e+02;
+orientation 7.07106781186548e-01 0.00000000000000e+00 0.00000000000000e+00 7.07106781186547e-01;
+eye_pt 3.00000000000000e+01 -1.52420471066061e+03 0.00000000000000e+00;
+start 0; clean;
+end;
+
+EOF
+#!/bin/sh
+rt -M \
+ -o sideview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> sideview.log\
+ <<EOF
+viewsize 8.80000000000000e+02;
+orientation 7.07106781186548e-01 0.00000000000000e+00 0.00000000000000e+00 7.07106781186547e-01;
+eye_pt 3.00000000000000e+01 -1.52420471066061e+03 0.00000000000000e+00;
+start 0; clean;
+end;
+
+EOF
+#!/bin/sh
+rt -M \
+ -o sideview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> sideview.log\
+ <<EOF
+viewsize 1.04000000000000e+03;
+orientation 7.07106781186548e-01 0.00000000000000e+00 0.00000000000000e+00 7.07106781186547e-01;
+eye_pt 1.00000000000000e+01 -1.80133283987163e+03 0.00000000000000e+00;
+start 0; clean;
+end;
+
+EOF
+#!/bin/sh
+rt -M \
+ -o sideview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> sideview.log\
+ <<EOF
+viewsize 8.00000000000000e+02;
+orientation 7.07106781186548e-01 0.00000000000000e+00 0.00000000000000e+00 7.07106781186547e-01;
+eye_pt 9.00000000000000e+01 -1.38564064605510e+03 0.00000000000000e+00;
+start 0; clean;
+end;
+
+EOF

@@ -1,0 +1,122 @@
+#!/bin/bash
+
+echo Content-type: text/html
+echo
+echo "<pre>"
+
+# removing old files.
+rm -f ballbearing.g
+rm -f rt*
+rm -f *.pix
+rm -f temp*
+rm -f ../../cgi-images/*
+
+#initialising variable for the values filled in the form
+#Radius of small ring
+rsm=`echo "$QUERY_STRING" | cut -d"&" -f1 | cut -d"=" -f2`
+#Radius of big ring
+rbi=`echo "$QUERY_STRING" | cut -d"&" -f2 | cut -d"=" -f2`
+#Thickness of ring
+thi=`echo "$QUERY_STRING" | cut -d"&" -f3 | cut -d"=" -f2`
+#adding to get the rmax and rmmx of ring
+rmax=`expr $rsm + $thi`
+rmmx=`expr $rbi + $thi`
+#Making the ballbearing
+rmaa=`expr $rbi - $rmax` 
+rmta=`expr $rmaa / 2`
+rmtt=`expr $rmax + $rmta`
+rcc=`echo "$rmtt / 1.414" | bc`
+ 
+ 
+
+
+#defining various views
+front=frontview
+side=sideview
+top=topview
+iso=isoview
+
+#mged commands
+cat <<EOF | env $which mged -c ballbearing.g
+in s0 rcc 0 0 0 $rmaa 0 0 $rmmx
+in s1 rcc 0 0 0 $rmaa 0 0 $rbi
+in s2 rcc 0 0 0 $rmaa 0 0 $rmax
+in s3 rcc 0 0 0 $rmaa 0 0 $rsm
+in s4 sph $rmta $rmtt 0 $rmta
+in s5 sph $rmta -$rmtt 0 $rmta
+in s6 sph $rmta 0 $rmtt $rmta
+in s7 sph $rmta 0 -$rmtt $rmta
+in s8 sph $rmta $rcc $rcc $rmta
+in s9 sph $rmta $rcc -$rcc $rmta
+in s10 sph $rmta -$rcc $rcc $rmta
+in s11 sph $rmta -$rcc -$rcc $rmta
+r r1.s u s0 - s1
+r r2.s u s2 - s3
+r r3.s u s4 u s5 u s6 u s7 u s8 u s9 u s10 u s11
+comb ballbearing.c u r1.s u r2.s u r3.s
+mater ballbearing.c plastic 122 164 220 0
+B ballbearing.c
+ae 0 0
+saveview $front
+ae 270 0
+saveview $side
+ae -90 90 
+saveview $top
+ae 30 30
+saveview $iso
+EOF
+
+# adding "env /usr/brlcad/dev-7.25.0/bin/" in the beginning of 2nd line of raytracing file
+# and sending output to temporary file.
+sed '2cenv /usr/brlcad/dev-7.24.1/bin/rt -M \\' $front > tempFile1
+sed '2cenv /usr/brlcad/dev-7.24.1/bin/rt -M \\' $side > tempFile2
+sed '2cenv /usr/brlcad/dev-7.24.1/bin/rt -M \\' $top > tempFile3
+sed '2cenv /usr/brlcad/dev-7.24.1/bin/rt -M \\' $iso > tempFile4
+
+# removing original raytracing file.
+rm $front
+rm $side
+rm $top
+rm $iso
+
+# changing name of temporary file to that of original file.
+mv tempFile1 $front
+mv tempFile2 $side
+mv tempFile3 $top
+mv tempFile4 $iso
+
+# give executable permissions to raytrace file.
+chmod 777 $front
+chmod 777 $side
+chmod 777 $top
+chmod 777 $iso
+
+# executing raytrace file. This will produce raw image in .pix tormat and a log
+#file.
+./$front
+./$side
+./$top
+./$iso
+
+# converting .pix file to png image using BRLCAD commands.
+env /usr/brlcad/dev-7.24.1/bin/pix-png < $front.pix > $front.png
+env /usr/brlcad/dev-7.24.1/bin/pix-png < $side.pix > $side.png
+env /usr/brlcad/dev-7.24.1/bin/pix-png < $top.pix > $top.png
+env /usr/brlcad/dev-7.24.1/bin/pix-png < $iso.pix > $iso.png
+
+chmod 777 $front.png
+chmod 777 $side.png
+chmod 777 $top.png
+chmod 777 $iso.png
+
+
+# copying final image to public_html for displaying on browser.
+cp $front.png ../../cgi-images/
+cp $side.png ../../cgi-images/
+cp $top.png ../../cgi-images/
+cp $iso.png ../../cgi-images/
+
+echo "<meta http-equiv=\"refresh\" content=\"1;url=../../multi_view2.html\">"
+echo "Processing your Table:"
+echo "<pre>"
+

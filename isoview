@@ -1,0 +1,15 @@
+#!/bin/sh
+env /usr/brlcad/dev-7.24.1/bin/rt -M \
+ -o isoview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/sofa.g'\
+ 'r1' 'r2' \
+ 2>> isoview.log\
+ <<EOF
+viewsize 1.44000000000000e+02;
+orientation 2.50000000000000e-01 4.33012701892219e-01 7.50000000000000e-01 4.33012701892219e-01;
+eye_pt 2.04962819303436e+02 1.05937480553825e+02 1.26975212868957e+02;
+start 0; clean;
+end;
+
+EOF

@@ -1,0 +1,150 @@
+#!/bin/sh
+env /usr/brlcad/dev-7.25.0/bin//rt -M \
+ -o isoview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> isoview.log\
+ <<EOF
+viewsize 8.80000000000000e+02;
+orientation 2.50000000000000e-01 4.33012701892219e-01 7.50000000000000e-01 4.33012701892219e-01;
+eye_pt 1.17315353299546e+03 6.60000000000000e+02 7.62102355330306e+02;
+start 0; clean;
+end;
+
+EOF
+#!/bin/sh
+rt -M \
+ -o isoview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> isoview.log\
+ <<EOF
+viewsize 8.80000000000000e+02;
+orientation 2.50000000000000e-01 4.33012701892219e-01 7.50000000000000e-01 4.33012701892219e-01;
+eye_pt 1.15315353299546e+03 6.60000000000000e+02 7.62102355330306e+02;
+start 0; clean;
+end;
+
+EOF
+#!/bin/sh
+rt -M \
+ -o isoview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> isoview.log\
+ <<EOF
+viewsize 8.80000000000000e+02;
+orientation 2.50000000000000e-01 4.33012701892219e-01 7.50000000000000e-01 4.33012701892219e-01;
+eye_pt 1.17315353299546e+03 6.60000000000000e+02 7.62102355330306e+02;
+start 0; clean;
+end;
+
+EOF
+#!/bin/sh
+rt -M \
+ -o isoview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> isoview.log\
+ <<EOF
+viewsize 8.80000000000000e+02;
+orientation 2.50000000000000e-01 4.33012701892219e-01 7.50000000000000e-01 4.33012701892219e-01;
+eye_pt 1.15315353299546e+03 6.60000000000000e+02 7.62102355330306e+02;
+start 0; clean;
+end;
+
+EOF
+#!/bin/sh
+rt -M \
+ -o isoview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> isoview.log\
+ <<EOF
+viewsize 8.80000000000000e+02;
+orientation 2.50000000000000e-01 4.33012701892219e-01 7.50000000000000e-01 4.33012701892219e-01;
+eye_pt 1.15315353299546e+03 6.60000000000000e+02 7.62102355330306e+02;
+start 0; clean;
+end;
+
+EOF
+#!/bin/sh
+rt -M \
+ -o isoview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> isoview.log\
+ <<EOF
+viewsize 1.28000000000000e+03;
+orientation 2.50000000000000e-01 4.33012701892219e-01 7.50000000000000e-01 4.33012701892219e-01;
+eye_pt 1.70276877526612e+03 9.60000000000001e+02 1.10851251684408e+03;
+start 0; clean;
+end;
+
+EOF
+#!/bin/sh
+rt -M \
+ -o isoview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> isoview.log\
+ <<EOF
+viewsize 8.80000000000000e+02;
+orientation 2.50000000000000e-01 4.33012701892219e-01 7.50000000000000e-01 4.33012701892219e-01;
+eye_pt 1.17315353299546e+03 6.60000000000000e+02 7.62102355330306e+02;
+start 0; clean;
+end;
+
+EOF
+#!/bin/sh
+rt -M \
+ -o isoview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> isoview.log\
+ <<EOF
+viewsize 8.80000000000000e+02;
+orientation 2.50000000000000e-01 4.33012701892219e-01 7.50000000000000e-01 4.33012701892219e-01;
+eye_pt 1.17315353299546e+03 6.60000000000000e+02 7.62102355330306e+02;
+start 0; clean;
+end;
+
+EOF
+#!/bin/sh
+rt -M \
+ -o isoview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> isoview.log\
+ <<EOF
+viewsize 1.04000000000000e+03;
+orientation 2.50000000000000e-01 4.33012701892219e-01 7.50000000000000e-01 4.33012701892219e-01;
+eye_pt 1.36099962990372e+03 7.80000000000001e+02 9.00666419935816e+02;
+start 0; clean;
+end;
+
+EOF
+#!/bin/sh
+rt -M \
+ -o isoview.pix\
+ $*\
+ '/home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g'\
+ 'ballbearing.c' \
+ 2>> isoview.log\
+ <<EOF
+viewsize 8.00000000000000e+02;
+orientation 2.50000000000000e-01 4.33012701892219e-01 7.50000000000000e-01 4.33012701892219e-01;
+eye_pt 1.12923048454133e+03 6.00000000000000e+02 6.92820323027551e+02;
+start 0; clean;
+end;
+
+EOF

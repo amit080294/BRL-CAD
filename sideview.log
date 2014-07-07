@@ -1,0 +1,63 @@
+BRL-CAD Release 7.25.0  The BRL-CAD Raytracer RT
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Ray-Tracing Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Numerical Computation Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Utility Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+
+Compile-time debug symbols are available
+Running on unknown
+Planning to run with 4 processors
+/usr/brlcad/dev-7.25.0/bin//rt -M -o sideview.pix
+opendb /home/amit/public_html/cgi-bin/sofa.g;
+tree r1 r2;
+db title:  Untitled BRL-CAD Database
+DIRBUILD: cpu = 0.000384 sec, elapsed = 0.000576 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 3588maxrss 0+155pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=135, #free=117, #realloc=4 (18 retained)
+0x7f8e5b924040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
+BRL-CAD Release 7.25.0  The BRL-CAD Optical Shader Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+Additional #malloc=2053, #free=5, #realloc=1 (2048 retained)
+GETTREE: cpu = 0.002022 sec, elapsed = 0.002042 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4592maxrss 0+99pf 21+2csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=3123, #free=2813, #realloc=11 (310 retained)
+
+...................Frame     0...................
+PREP: cpu = 0.001183 sec, elapsed = 0.001238 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4592maxrss 0+34pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=383, #free=199, #realloc=4 (184 retained)
+NUBSP: 0 nu, 166 cut, 167 box (167 empty)
+Tree: 39 solids in 2 regions
+Model: X(0, 62), Y(0, 22), Z(-5, 22)
+View: 0 azimuth, 0 elevation off of front view
+Orientation: 0.5, 0.5, 0.5, 0.5
+Eye_pos: 262.95, 5.5, 11
+Size: 144mm
+Grid: (0.28125, 0.28125) mm, (512, 512) pixels
+Beam: radius=0.140625 mm, divergence=0 mm/1mm
+Output file is 'sideview.pix' 512x512 pixels
+Low overhead scanline-per-CPU buffering
+
+SHOT: cpu = 0.23535 sec, elapsed = 0.064771 sec
+    parent: 0.2user 0.0sys 0:00real 383% 0i+0d 8298maxrss 0+82pf 37+45csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=615, #free=566, #realloc=3 (49 retained)
+31181 solid/ray intersections: 6199 hits + 24982 miss
+pruned 19.9%:  254656 model RPP, 33763 dups skipped, 0 solid RPP
+Frame  0:     262144 pixels in      0.06 sec =   4455389.84 pixels/sec
+Frame  0:     262144 rays   in      0.06 sec =   4455389.84 rays/sec (RTFM)
+Frame  0:     262144 rays   in      0.24 sec =   1113847.46 rays/CPU_sec
+Frame  0:     262144 rays   in      0.06 sec =   4047243.37 rays/sec (wallclock)
+
+env: /usr/brlcad/dev-7.24.1/bin/rt: No such file or directory

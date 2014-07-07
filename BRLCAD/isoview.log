@@ -1,0 +1,665 @@
+BRL-CAD Release 7.25.0  The BRL-CAD Raytracer RT
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Ray-Tracing Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Numerical Computation Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Utility Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+
+Compile-time debug symbols are available
+Running on unknown
+Planning to run with 4 processors
+/usr/brlcad/dev-7.25.0/bin//rt -M -o isoview.pix
+opendb /home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g;
+tree ballbearing.c;
+db title:  Untitled BRL-CAD Database
+DIRBUILD: cpu = 0.000344 sec, elapsed = 0.00052 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 3588maxrss 0+153pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=111, #free=94, #realloc=5 (17 retained)
+0x7f425b271040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
+BRL-CAD Release 7.25.0  The BRL-CAD Optical Shader Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+Additional #malloc=2053, #free=5, #realloc=1 (2048 retained)
+GETTREE: cpu = 0.00166 sec, elapsed = 0.001333 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4596maxrss 0+103pf 18+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=2011, #free=1882, #realloc=11 (129 retained)
+
+...................Frame     0...................
+PREP: cpu = 0.000291 sec, elapsed = 0.000331 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4596maxrss 0+26pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=199, #free=108, #realloc=4 (91 retained)
+NUBSP: 0 nu, 74 cut, 75 box (75 empty)
+Tree: 12 solids in 3 regions
+Model: X(0, 60), Y(-220, 220), Z(-220, 220)
+View: 30 azimuth, 30 elevation off of front view
+Orientation: 0.25, 0.433013, 0.75, 0.433013
+Eye_pos: 1173.15, 660, 762.102
+Size: 880mm
+Grid: (1.71875, 1.71875) mm, (512, 512) pixels
+Beam: radius=0.859375 mm, divergence=0 mm/1mm
+Output file is 'isoview.pix' 512x512 pixels
+Low overhead scanline-per-CPU buffering
+
+SHOT: cpu = 0.582277 sec, elapsed = 0.150019 sec
+    parent: 0.5user 0.0sys 0:00real 362% 0i+0d 8306maxrss 0+75pf 34+48csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=634, #free=566, #realloc=3 (68 retained)
+170405 solid/ray intersections: 122608 hits + 47797 miss
+pruned 72.0%:  204687 model RPP, 142686 dups skipped, 5268 solid RPP
+Frame  0:     262144 pixels in      0.15 sec =   1800819.88 pixels/sec
+Frame  0:     262144 rays   in      0.15 sec =   1800819.88 rays/sec (RTFM)
+Frame  0:     262144 rays   in      0.58 sec =    450204.97 rays/CPU_sec
+Frame  0:     262144 rays   in      0.15 sec =   1747405.33 rays/sec (wallclock)
+
+BRL-CAD Release 7.25.0  The BRL-CAD Raytracer RT
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Ray-Tracing Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Numerical Computation Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Utility Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+
+Compile-time debug symbols are available
+Running on unknown
+Planning to run with 4 processors
+/usr/brlcad/dev-7.25.0/bin//rt -M -o isoview.pix
+opendb /home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g;
+tree ballbearing.c;
+db title:  Untitled BRL-CAD Database
+DIRBUILD: cpu = 0.000381 sec, elapsed = 0.000591 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 3590maxrss 0+153pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=111, #free=94, #realloc=5 (17 retained)
+0x7f8d588c2040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
+BRL-CAD Release 7.25.0  The BRL-CAD Optical Shader Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+Additional #malloc=2053, #free=5, #realloc=1 (2048 retained)
+GETTREE: cpu = 0.001632 sec, elapsed = 0.001362 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4600maxrss 0+103pf 30+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=2011, #free=1881, #realloc=11 (130 retained)
+
+...................Frame     0...................
+PREP: cpu = 0.000285 sec, elapsed = 0.000323 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4600maxrss 0+26pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=189, #free=103, #realloc=4 (86 retained)
+NUBSP: 0 nu, 69 cut, 70 box (70 empty)
+Tree: 12 solids in 3 regions
+Model: X(0, 20), Y(-220, 220), Z(-220, 220)
+View: 30 azimuth, 30 elevation off of front view
+Orientation: 0.25, 0.433013, 0.75, 0.433013
+Eye_pos: 1173.15, 660, 762.102
+Size: 880mm
+Grid: (1.71875, 1.71875) mm, (512, 512) pixels
+Beam: radius=0.859375 mm, divergence=0 mm/1mm
+Output file is 'isoview.pix' 512x512 pixels
+Low overhead scanline-per-CPU buffering
+
+SHOT: cpu = 0.494154 sec, elapsed = 0.131631 sec
+    parent: 0.4user 0.0sys 0:00real 376% 0i+0d 8310maxrss 0+80pf 33+87csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=626, #free=566, #realloc=3 (60 retained)
+159618 solid/ray intersections: 124323 hits + 35295 miss
+pruned 77.9%:  210327 model RPP, 52060 dups skipped, 5289 solid RPP
+Frame  0:     262144 pixels in      0.12 sec =   2121961.98 pixels/sec
+Frame  0:     262144 rays   in      0.12 sec =   2121961.98 rays/sec (RTFM)
+Frame  0:     262144 rays   in      0.49 sec =    530490.49 rays/CPU_sec
+Frame  0:     262144 rays   in      0.13 sec =   1991506.56 rays/sec (wallclock)
+
+./isoview: 17: ./isoview: rt: not found
+BRL-CAD Release 7.25.0  The BRL-CAD Raytracer RT
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Ray-Tracing Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Numerical Computation Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Utility Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+
+Compile-time debug symbols are available
+Running on unknown
+Planning to run with 4 processors
+/usr/brlcad/dev-7.25.0/bin//rt -M -o isoview.pix
+opendb /home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g;
+tree ballbearing.c;
+db title:  Untitled BRL-CAD Database
+DIRBUILD: cpu = 0.000417 sec, elapsed = 0.000633 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 3588maxrss 0+153pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=111, #free=94, #realloc=5 (17 retained)
+0x7fa363db9040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
+BRL-CAD Release 7.25.0  The BRL-CAD Optical Shader Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+Additional #malloc=2053, #free=5, #realloc=1 (2048 retained)
+GETTREE: cpu = 0.001768 sec, elapsed = 0.00153 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4594maxrss 0+108pf 34+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=2000, #free=1882, #realloc=11 (118 retained)
+
+...................Frame     0...................
+PREP: cpu = 0.000292 sec, elapsed = 0.000331 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4594maxrss 0+26pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=199, #free=108, #realloc=4 (91 retained)
+NUBSP: 0 nu, 74 cut, 75 box (75 empty)
+Tree: 12 solids in 3 regions
+Model: X(0, 60), Y(-220, 220), Z(-220, 220)
+View: 30 azimuth, 30 elevation off of front view
+Orientation: 0.25, 0.433013, 0.75, 0.433013
+Eye_pos: 1173.15, 660, 762.102
+Size: 880mm
+Grid: (1.71875, 1.71875) mm, (512, 512) pixels
+Beam: radius=0.859375 mm, divergence=0 mm/1mm
+Output file is 'isoview.pix' 512x512 pixels
+Low overhead scanline-per-CPU buffering
+
+SHOT: cpu = 0.599936 sec, elapsed = 0.15542 sec
+    parent: 0.5user 0.0sys 0:00real 393% 0i+0d 8306maxrss 0+81pf 67+93csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=634, #free=566, #realloc=3 (68 retained)
+170405 solid/ray intersections: 122608 hits + 47797 miss
+pruned 72.0%:  204687 model RPP, 142686 dups skipped, 5268 solid RPP
+Frame  0:     262144 pixels in      0.15 sec =   1747813.10 pixels/sec
+Frame  0:     262144 rays   in      0.15 sec =   1747813.10 rays/sec (RTFM)
+Frame  0:     262144 rays   in      0.60 sec =    436953.28 rays/CPU_sec
+Frame  0:     262144 rays   in      0.16 sec =   1686681.25 rays/sec (wallclock)
+
+./isoview: 17: ./isoview: rt: not found
+./isoview: 32: ./isoview: rt: not found
+BRL-CAD Release 7.25.0  The BRL-CAD Raytracer RT
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Ray-Tracing Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Numerical Computation Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Utility Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+
+Compile-time debug symbols are available
+Running on unknown
+Planning to run with 4 processors
+/usr/brlcad/dev-7.25.0/bin//rt -M -o isoview.pix
+opendb /home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g;
+tree ballbearing.c;
+db title:  Untitled BRL-CAD Database
+DIRBUILD: cpu = 0.00036 sec, elapsed = 0.00055 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 3590maxrss 0+153pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=111, #free=94, #realloc=5 (17 retained)
+0x7f0c3451a040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
+BRL-CAD Release 7.25.0  The BRL-CAD Optical Shader Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+Additional #malloc=2053, #free=5, #realloc=1 (2048 retained)
+GETTREE: cpu = 0.001711 sec, elapsed = 0.001449 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4598maxrss 0+113pf 30+2csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=2008, #free=1882, #realloc=11 (126 retained)
+
+...................Frame     0...................
+PREP: cpu = 0.000283 sec, elapsed = 0.00032 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4598maxrss 0+26pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=189, #free=103, #realloc=4 (86 retained)
+NUBSP: 0 nu, 69 cut, 70 box (70 empty)
+Tree: 12 solids in 3 regions
+Model: X(0, 20), Y(-220, 220), Z(-220, 220)
+View: 30 azimuth, 30 elevation off of front view
+Orientation: 0.25, 0.433013, 0.75, 0.433013
+Eye_pos: 1173.15, 660, 762.102
+Size: 880mm
+Grid: (1.71875, 1.71875) mm, (512, 512) pixels
+Beam: radius=0.859375 mm, divergence=0 mm/1mm
+Output file is 'isoview.pix' 512x512 pixels
+Low overhead scanline-per-CPU buffering
+
+SHOT: cpu = 0.491255 sec, elapsed = 0.127031 sec
+    parent: 0.4user 0.0sys 0:00real 408% 0i+0d 8308maxrss 0+70pf 44+89csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=626, #free=566, #realloc=3 (60 retained)
+159618 solid/ray intersections: 124323 hits + 35295 miss
+pruned 77.9%:  210327 model RPP, 52060 dups skipped, 5289 solid RPP
+Frame  0:     262144 pixels in      0.12 sec =   2134484.13 pixels/sec
+Frame  0:     262144 rays   in      0.12 sec =   2134484.13 rays/sec (RTFM)
+Frame  0:     262144 rays   in      0.49 sec =    533621.03 rays/CPU_sec
+Frame  0:     262144 rays   in      0.13 sec =   2063622.27 rays/sec (wallclock)
+
+./isoview: 17: ./isoview: rt: not found
+./isoview: 32: ./isoview: rt: not found
+./isoview: 47: ./isoview: rt: not found
+BRL-CAD Release 7.25.0  The BRL-CAD Raytracer RT
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Ray-Tracing Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Numerical Computation Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Utility Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+
+Compile-time debug symbols are available
+Running on unknown
+Planning to run with 4 processors
+/usr/brlcad/dev-7.25.0/bin//rt -M -o isoview.pix
+opendb /home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g;
+tree ballbearing.c;
+db title:  Untitled BRL-CAD Database
+DIRBUILD: cpu = 0.000342 sec, elapsed = 0.000525 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 3590maxrss 0+153pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=111, #free=94, #realloc=5 (17 retained)
+0x7fcab5f24040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
+BRL-CAD Release 7.25.0  The BRL-CAD Optical Shader Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+Additional #malloc=2053, #free=5, #realloc=1 (2048 retained)
+GETTREE: cpu = 0.001671 sec, elapsed = 0.001397 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4596maxrss 0+110pf 32+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=2000, #free=1885, #realloc=11 (115 retained)
+
+...................Frame     0...................
+PREP: cpu = 0.000285 sec, elapsed = 0.000323 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4596maxrss 0+26pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=189, #free=103, #realloc=4 (86 retained)
+NUBSP: 0 nu, 69 cut, 70 box (70 empty)
+Tree: 12 solids in 3 regions
+Model: X(0, 20), Y(-220, 220), Z(-220, 220)
+View: 30 azimuth, 30 elevation off of front view
+Orientation: 0.25, 0.433013, 0.75, 0.433013
+Eye_pos: 1173.15, 660, 762.102
+Size: 880mm
+Grid: (1.71875, 1.71875) mm, (512, 512) pixels
+Beam: radius=0.859375 mm, divergence=0 mm/1mm
+Output file is 'isoview.pix' 512x512 pixels
+Low overhead scanline-per-CPU buffering
+
+SHOT: cpu = 0.508062 sec, elapsed = 0.131699 sec
+    parent: 0.5user 0.0sys 0:00real 384% 0i+0d 8308maxrss 0+71pf 45+84csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=626, #free=566, #realloc=3 (60 retained)
+159618 solid/ray intersections: 124323 hits + 35295 miss
+pruned 77.9%:  210327 model RPP, 52060 dups skipped, 5289 solid RPP
+Frame  0:     262144 pixels in      0.13 sec =   2063874.09 pixels/sec
+Frame  0:     262144 rays   in      0.13 sec =   2063874.09 rays/sec (RTFM)
+Frame  0:     262144 rays   in      0.51 sec =    515968.52 rays/CPU_sec
+Frame  0:     262144 rays   in      0.13 sec =   1990478.29 rays/sec (wallclock)
+
+./isoview: 17: ./isoview: rt: not found
+./isoview: 32: ./isoview: rt: not found
+./isoview: 47: ./isoview: rt: not found
+./isoview: 62: ./isoview: rt: not found
+BRL-CAD Release 7.25.0  The BRL-CAD Raytracer RT
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Ray-Tracing Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Numerical Computation Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Utility Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+
+Compile-time debug symbols are available
+Running on unknown
+Planning to run with 4 processors
+/usr/brlcad/dev-7.25.0/bin//rt -M -o isoview.pix
+opendb /home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g;
+tree ballbearing.c;
+db title:  Untitled BRL-CAD Database
+DIRBUILD: cpu = 0.000438 sec, elapsed = 0.000667 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 3590maxrss 0+153pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=111, #free=94, #realloc=5 (17 retained)
+0x7fbb58334040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
+BRL-CAD Release 7.25.0  The BRL-CAD Optical Shader Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+Additional #malloc=2053, #free=5, #realloc=1 (2048 retained)
+GETTREE: cpu = 0.003159 sec, elapsed = 0.002673 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4598maxrss 0+111pf 28+3csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=2010, #free=1883, #realloc=11 (127 retained)
+
+...................Frame     0...................
+PREP: cpu = 0.000443 sec, elapsed = 0.0005 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4598maxrss 0+26pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=203, #free=110, #realloc=4 (93 retained)
+NUBSP: 0 nu, 76 cut, 77 box (77 empty)
+Tree: 12 solids in 3 regions
+Model: X(0, 80), Y(-320, 320), Z(-320, 320)
+View: 30 azimuth, 30 elevation off of front view
+Orientation: 0.25, 0.433013, 0.75, 0.433013
+Eye_pos: 1173.15, 660, 762.102
+Size: 880mm
+Grid: (1.71875, 1.71875) mm, (512, 512) pixels
+Beam: radius=0.859375 mm, divergence=0 mm/1mm
+Output file is 'isoview.pix' 512x512 pixels
+Low overhead scanline-per-CPU buffering
+
+SHOT: cpu = 0.96917 sec, elapsed = 0.249105 sec
+    parent: 0.9user 0.0sys 0:00real 400% 0i+0d 8306maxrss 0+68pf 73+149csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=634, #free=566, #realloc=3 (68 retained)
+368101 solid/ray intersections: 272827 hits + 95274 miss
+pruned 74.1%:  142224 model RPP, 281687 dups skipped, 9443 solid RPP
+Frame  0:     262144 pixels in      0.24 sec =   1081931.96 pixels/sec
+Frame  0:     262144 rays   in      0.24 sec =   1081931.96 rays/sec (RTFM)
+Frame  0:     262144 rays   in      0.97 sec =    270482.99 rays/CPU_sec
+Frame  0:     262144 rays   in      0.25 sec =   1052343.39 rays/sec (wallclock)
+
+./isoview: 17: ./isoview: rt: not found
+./isoview: 32: ./isoview: rt: not found
+./isoview: 47: ./isoview: rt: not found
+./isoview: 62: ./isoview: rt: not found
+./isoview: 77: ./isoview: rt: not found
+BRL-CAD Release 7.25.0  The BRL-CAD Raytracer RT
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Ray-Tracing Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Numerical Computation Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Utility Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+
+Compile-time debug symbols are available
+Running on unknown
+Planning to run with 4 processors
+/usr/brlcad/dev-7.25.0/bin//rt -M -o isoview.pix
+opendb /home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g;
+tree ballbearing.c;
+db title:  Untitled BRL-CAD Database
+DIRBUILD: cpu = 0.000412 sec, elapsed = 0.000642 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 3588maxrss 0+153pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=111, #free=94, #realloc=5 (17 retained)
+0x7f1c7a322040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
+BRL-CAD Release 7.25.0  The BRL-CAD Optical Shader Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+Additional #malloc=2053, #free=5, #realloc=1 (2048 retained)
+GETTREE: cpu = 0.001744 sec, elapsed = 0.001548 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4596maxrss 0+102pf 34+1csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=2012, #free=1884, #realloc=11 (128 retained)
+
+...................Frame     0...................
+PREP: cpu = 0.000376 sec, elapsed = 0.000421 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4596maxrss 0+26pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=199, #free=108, #realloc=4 (91 retained)
+NUBSP: 0 nu, 74 cut, 75 box (75 empty)
+Tree: 12 solids in 3 regions
+Model: X(0, 60), Y(-220, 220), Z(-220, 220)
+View: 30 azimuth, 30 elevation off of front view
+Orientation: 0.25, 0.433013, 0.75, 0.433013
+Eye_pos: 1173.15, 660, 762.102
+Size: 880mm
+Grid: (1.71875, 1.71875) mm, (512, 512) pixels
+Beam: radius=0.859375 mm, divergence=0 mm/1mm
+Output file is 'isoview.pix' 512x512 pixels
+Low overhead scanline-per-CPU buffering
+
+SHOT: cpu = 0.57356 sec, elapsed = 0.151019 sec
+    parent: 0.5user 0.0sys 0:00real 380% 0i+0d 8306maxrss 0+79pf 68+98csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=634, #free=566, #realloc=3 (68 retained)
+170405 solid/ray intersections: 122608 hits + 47797 miss
+pruned 72.0%:  204687 model RPP, 142686 dups skipped, 5268 solid RPP
+Frame  0:     262144 pixels in      0.14 sec =   1828188.86 pixels/sec
+Frame  0:     262144 rays   in      0.14 sec =   1828188.86 rays/sec (RTFM)
+Frame  0:     262144 rays   in      0.57 sec =    457047.21 rays/CPU_sec
+Frame  0:     262144 rays   in      0.15 sec =   1735834.56 rays/sec (wallclock)
+
+./isoview: 17: ./isoview: rt: not found
+./isoview: 32: ./isoview: rt: not found
+./isoview: 47: ./isoview: rt: not found
+./isoview: 62: ./isoview: rt: not found
+./isoview: 77: ./isoview: rt: not found
+./isoview: 92: ./isoview: rt: not found
+BRL-CAD Release 7.25.0  The BRL-CAD Raytracer RT
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Ray-Tracing Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Numerical Computation Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Utility Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+
+Compile-time debug symbols are available
+Running on unknown
+Planning to run with 4 processors
+/usr/brlcad/dev-7.25.0/bin//rt -M -o isoview.pix
+opendb /home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g;
+tree ballbearing.c;
+db title:  Untitled BRL-CAD Database
+DIRBUILD: cpu = 0.000367 sec, elapsed = 0.000594 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 3588maxrss 0+153pf 0+1csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=111, #free=94, #realloc=5 (17 retained)
+0x7fb6899b9040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
+BRL-CAD Release 7.25.0  The BRL-CAD Optical Shader Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+Additional #malloc=2053, #free=5, #realloc=1 (2048 retained)
+GETTREE: cpu = 0.001688 sec, elapsed = 0.001454 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4596maxrss 0+108pf 21+1csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=2012, #free=1885, #realloc=11 (127 retained)
+
+...................Frame     0...................
+PREP: cpu = 0.000322 sec, elapsed = 0.000413 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4596maxrss 0+26pf 0+1csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=199, #free=108, #realloc=4 (91 retained)
+NUBSP: 0 nu, 74 cut, 75 box (75 empty)
+Tree: 12 solids in 3 regions
+Model: X(0, 60), Y(-220, 220), Z(-220, 220)
+View: 30 azimuth, 30 elevation off of front view
+Orientation: 0.25, 0.433013, 0.75, 0.433013
+Eye_pos: 1173.15, 660, 762.102
+Size: 880mm
+Grid: (1.71875, 1.71875) mm, (512, 512) pixels
+Beam: radius=0.859375 mm, divergence=0 mm/1mm
+Output file is 'isoview.pix' 512x512 pixels
+Low overhead scanline-per-CPU buffering
+
+SHOT: cpu = 0.60685 sec, elapsed = 0.158644 sec
+    parent: 0.6user 0.0sys 0:00real 400% 0i+0d 8304maxrss 0+69pf 29+94csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=634, #free=566, #realloc=3 (68 retained)
+170405 solid/ray intersections: 122608 hits + 47797 miss
+pruned 72.0%:  204687 model RPP, 142686 dups skipped, 5268 solid RPP
+Frame  0:     262144 pixels in      0.15 sec =   1727899.81 pixels/sec
+Frame  0:     262144 rays   in      0.15 sec =   1727899.81 rays/sec (RTFM)
+Frame  0:     262144 rays   in      0.61 sec =    431974.95 rays/CPU_sec
+Frame  0:     262144 rays   in      0.16 sec =   1652404.12 rays/sec (wallclock)
+
+./isoview: 17: ./isoview: rt: not found
+./isoview: 32: ./isoview: rt: not found
+./isoview: 47: ./isoview: rt: not found
+./isoview: 62: ./isoview: rt: not found
+./isoview: 77: ./isoview: rt: not found
+./isoview: 92: ./isoview: rt: not found
+./isoview: 107: ./isoview: rt: not found
+BRL-CAD Release 7.25.0  The BRL-CAD Raytracer RT
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Ray-Tracing Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Numerical Computation Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Utility Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+
+Compile-time debug symbols are available
+Running on unknown
+Planning to run with 4 processors
+/usr/brlcad/dev-7.25.0/bin//rt -M -o isoview.pix
+opendb /home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g;
+tree ballbearing.c;
+db title:  Untitled BRL-CAD Database
+DIRBUILD: cpu = 0.000346 sec, elapsed = 0.000527 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 3588maxrss 0+153pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=111, #free=94, #realloc=5 (17 retained)
+0x7f2ff46f9040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
+BRL-CAD Release 7.25.0  The BRL-CAD Optical Shader Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+Additional #malloc=2053, #free=5, #realloc=1 (2048 retained)
+GETTREE: cpu = 0.001818 sec, elapsed = 0.001619 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4598maxrss 0+113pf 30+1csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=2012, #free=1888, #realloc=11 (124 retained)
+
+...................Frame     0...................
+PREP: cpu = 0.000263 sec, elapsed = 0.000299 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4598maxrss 0+24pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=168, #free=93, #realloc=4 (75 retained)
+NUBSP: 0 nu, 59 cut, 60 box (60 empty)
+Tree: 12 solids in 3 regions
+Model: X(0, 20), Y(-260, 260), Z(-260, 260)
+View: 30 azimuth, 30 elevation off of front view
+Orientation: 0.25, 0.433013, 0.75, 0.433013
+Eye_pos: 1173.15, 660, 762.102
+Size: 880mm
+Grid: (1.71875, 1.71875) mm, (512, 512) pixels
+Beam: radius=0.859375 mm, divergence=0 mm/1mm
+Output file is 'isoview.pix' 512x512 pixels
+Low overhead scanline-per-CPU buffering
+
+SHOT: cpu = 0.610123 sec, elapsed = 0.15812 sec
+    parent: 0.6user 0.0sys 0:00real 406% 0i+0d 8300maxrss 0+84pf 43+99csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=626, #free=566, #realloc=3 (60 retained)
+233648 solid/ray intersections: 179321 hits + 54327 miss
+pruned 76.7%:  190165 model RPP, 61760 dups skipped, 7518 solid RPP
+Frame  0:     262144 pixels in      0.15 sec =   1718630.51 pixels/sec
+Frame  0:     262144 rays   in      0.15 sec =   1718630.51 rays/sec (RTFM)
+Frame  0:     262144 rays   in      0.61 sec =    429657.63 rays/CPU_sec
+Frame  0:     262144 rays   in      0.16 sec =   1657880.09 rays/sec (wallclock)
+
+./isoview: 17: ./isoview: rt: not found
+./isoview: 32: ./isoview: rt: not found
+./isoview: 47: ./isoview: rt: not found
+./isoview: 62: ./isoview: rt: not found
+./isoview: 77: ./isoview: rt: not found
+./isoview: 92: ./isoview: rt: not found
+./isoview: 107: ./isoview: rt: not found
+./isoview: 122: ./isoview: rt: not found
+BRL-CAD Release 7.25.0  The BRL-CAD Raytracer RT
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Ray-Tracing Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Numerical Computation Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+BRL-CAD Release 7.25.0  The BRL-CAD Utility Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+
+Compile-time debug symbols are available
+Running on unknown
+Planning to run with 4 processors
+/usr/brlcad/dev-7.25.0/bin//rt -M -o isoview.pix
+opendb /home/amit/public_html/cgi-bin/BRLCAD/ballbearing.g;
+tree ballbearing.c;
+db title:  Untitled BRL-CAD Database
+DIRBUILD: cpu = 0.00035 sec, elapsed = 0.000536 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 3590maxrss 0+153pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=111, #free=94, #realloc=5 (17 retained)
+0x7ff2df060040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
+BRL-CAD Release 7.25.0  The BRL-CAD Optical Shader Library
+    Mon, 23 Jun 2014 13:38:48 +0530, Compilation 0
+    amit@amit-Inspiron-3521
+Additional #malloc=2053, #free=5, #realloc=1 (2048 retained)
+GETTREE: cpu = 0.002415 sec, elapsed = 0.002416 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4594maxrss 0+100pf 9+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=2014, #free=1888, #realloc=11 (126 retained)
+
+...................Frame     0...................
+PREP: cpu = 0.000299 sec, elapsed = 0.000339 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4594maxrss 0+24pf 0+0csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=170, #free=94, #realloc=4 (76 retained)
+NUBSP: 0 nu, 60 cut, 61 box (61 empty)
+Tree: 12 solids in 3 regions
+Model: X(0, 180), Y(-200, 200), Z(-200, 200)
+View: 30 azimuth, 30 elevation off of front view
+Orientation: 0.25, 0.433013, 0.75, 0.433013
+Eye_pos: 1173.15, 660, 762.102
+Size: 880mm
+Grid: (1.71875, 1.71875) mm, (512, 512) pixels
+Beam: radius=0.859375 mm, divergence=0 mm/1mm
+Output file is 'isoview.pix' 512x512 pixels
+Low overhead scanline-per-CPU buffering
+
+SHOT: cpu = 0.705895 sec, elapsed = 0.182724 sec
+    parent: 0.7user 0.0sys 0:00real 388% 0i+0d 8304maxrss 0+77pf 35+132csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=666, #free=566, #realloc=3 (100 retained)
+253567 solid/ray intersections: 161617 hits + 91950 miss
+pruned 63.7%:  198765 model RPP, 313618 dups skipped, 23634 solid RPP
+Frame  0:     262144 pixels in      0.18 sec =   1485456.05 pixels/sec
+Frame  0:     262144 rays   in      0.18 sec =   1485456.05 rays/sec (RTFM)
+Frame  0:     262144 rays   in      0.71 sec =    371364.01 rays/CPU_sec
+Frame  0:     262144 rays   in      0.18 sec =   1434644.60 rays/sec (wallclock)
+
+./isoview: 17: ./isoview: rt: not found
+./isoview: 32: ./isoview: rt: not found
+./isoview: 47: ./isoview: rt: not found
+./isoview: 62: ./isoview: rt: not found
+./isoview: 77: ./isoview: rt: not found
+./isoview: 92: ./isoview: rt: not found
+./isoview: 107: ./isoview: rt: not found
+./isoview: 122: ./isoview: rt: not found
+./isoview: 137: ./isoview: rt: not found

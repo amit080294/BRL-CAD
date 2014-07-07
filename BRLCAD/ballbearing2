@@ -1,0 +1,85 @@
+#!/bin/bash
+
+echo Content-type: text/html
+echo
+echo "<pre>"
+
+# removing old files.
+rm -f ballbearing.g
+rm -f rt*
+rm -f ../../cgi-images/rt*
+
+rt=rtFile
+#initialising variable for the values filled in the form
+#Radius of small ring
+rsm=`echo "$QUERY_STRING" | cut -d"&" -f1 | cut -d"=" -f2`
+#Radius of big ring
+rbi=`echo "$QUERY_STRING" | cut -d"&" -f2 | cut -d"=" -f2`
+#Thickness of ring
+thi=`echo "$QUERY_STRING" | cut -d"&" -f3 | cut -d"=" -f2`
+#adding to get the rmax and rmmx of ring
+rmax=`expr $rsm + $thi`
+rmmx=`expr $rbi + $thi`
+#Making the ballbearing need
+rmaa=`expr $rbi - $rmax`
+rmta=`expr $rmaa/2`
+rmtt=`expr $rmax + $rmta`
+rcc=`echo "$rmtt / 1.414" | bc`
+
+echo "Your ballbearing is:"
+
+#mged commands
+cat <<EOF | env /usr/brlcad/dev-7.25.0/bin//mged -c ballbearing.g
+in s0 rcc 0 0 0 $rmaa 0 0 $rmmx
+in s1 rcc 0 0 0 $rmaa 0 0 $rbi
+in s2 rcc 0 0 0 $rmaa 0 0 $rmax
+in s3 rcc 0 0 0 $rmaa 0 0 $rsm
+in s4 sph $rmta $rmtt 0 $rmta
+in s5 sph $rmta -$rmtt 0 $rmta
+in s6 sph $rmta 0 $rmtt $rmta
+in s7 sph $rmta 0 -$rmtt $rmta
+in s8 sph $rmta $rcc $rcc $rmta
+in s9 sph $rmta $rcc -$rcc $rmta
+in s10 sph $rmta -$rcc $rcc $rmta
+in s11 sph $rmta -$rcc -$rcc $rmta
+r r1.s u s0 - s1
+r r2.s u s2 - s3
+r r3.s u s4 u s5 u s6 u s7 u r8 ur9 u r10 u r11
+comb ballbearing.c u r1.s u r2.s u r3.s
+mater ballbearing.c plastic 122 164 220 0
+B ballbearing.c
+ae 25 35
+saveview $rt
+EOF
+
+# adding "env /usr/brlcad/dev-7.25.0/bin/" in the beginning of 2nd line of raytracing file
+# and sending output to temporary file.
+sed '2cenv /usr/brlcad/dev-7.25.0/bin/rt -M \\' $rt > tempFile
+# removing original raytracing file.
+rm $rt
+
+# changing name of temporary file to that of original file.
+mv tempFile $rt
+
+# give executable permissions to raytrace file.
+chmod 777 $rt
+
+# executing raytrace file. This will produce raw image in .pix tormat and a log
+#file.
+./$rt
+
+# converting .pix file to png image using BRLCAD commands.
+env /usr/brlcad/dev-7.25.0/bin//pix-png < $rt.pix > $rt.png
+
+# open png image in a frame buffer. Currently not required.
+#env /usr/brlcad/bin/png-fb $rt.png
+
+# copying final image to public_html for displaying on browser.
+cp $rt.png ../../cgi-images/
+
+# using html <img src tag, display image on browser.
+echo "<img src = ../../cgi-images/$rt.png"
+echo "<h1>Ballbearing</h1>"
+
+echo "</pre>"
+echo "</br><h3><a href="http://cad.devplace.in/form.html">Lets make another ballbearing</a></h3></br>"
