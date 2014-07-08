@@ -5,21 +5,17 @@ echo
 echo "<pre>"
 
 # removing old files.
-rm -f sofa.g
-rm -f rt*
-rm -f *.pix
-rm -f temp*
-rm -f ../cgi-images/*
- 
+rm -f sofa.g rt* *.pix temp* ../cgi-images/*
+
 
 #defining various views
 front=frontview
 side=sideview
-back=backview
+top=topview
 iso=isoview
 
 #mged commands
-cat <<EOF | env /usr/brlcad/dev-7.24.1/bin/mged -c sofa.g
+cat <<EOF | env /usr/brlcad/dev-7.25.0/bin//mged -c sofa.g
 in s0 rpp 0 62 0 2 0 2
 in s1 rpp 0 62 0 2 20 22
 in s2 rpp 0 2 0 2 2 20
@@ -47,83 +43,73 @@ in s23 rpp 0 2 16 18 2 10
 in s24 rpp 0 2 20 22 2 10
 in s25 rpp 60 62 2 22 0 2
 in s26 rpp 60 62 2 22 10 12
-in s27 rpp 60 62 4 6 2 10
-in s28 rpp 60 62 8 10 2 10
-in s29 rpp 60 62 12 14 2 10
-in s30 rpp 60 62 16 18 2 10
-in s31 rpp 60 62 20 22 2 10
+in s27 rpp 60 62 4 6 0 10
+in s28 rpp 60 62 8 10 0 10
+in s29 rpp 60 62 12 14 0 10
+in s30 rpp 60 62 16 18 0 10
+in s31 rpp 60 62 20 22 0 10
 in s32 rpp 2 60 2 22 0 2
 in s33 rpp 0 4 0 4 -5 0
 in s34 rpp 58 62 0 4 -5 0
 in s35 rpp 0 4 18 22 -5 0
 in s36 rpp 58 62 18 22 -5 0
-r r1 u s0 u s1 u s2 u s3 u s4 u s5 u s6 u s7 u s8 u s9 u s10 u s11 u s12 u s13 u s14 u s15 u s16 u s17 u s18 u s19 u s20 u s21 u s22 u s23 u s24 u s25 u s26 u s27 u s28 u s29 u s30 u s31 u s32 u s33 u s34 u s35 u s36
-mater r1 plastic 164 96 38 .
 in s37 rpp 2 60 6 22 2 6
 in s38 rpp 2 60 2 6 2 22
+r r1 u s0 u s1 u s2 u s3 u s4 u s5 u s6 u s7 u s8 u s9 u s10 u s11 u s12 u s13 u s14 u s15 u s16 u s17 u s18 u s19 u s20 u s21 u s22 u s23 u s24 u s25 u s26 u s27 u s28 u s29 u s30 u s31 u s32 u s33 u s34 u s35 u s36
 r r2 u s37 u s38
+mater r1 plastic 164 96 38 .
 mater r2 plastic 122 164 220 0
-B r1
 B r1 r2
-ae 45 45
-saveview $front
 ae 0 0
-saveview $side
+saveview $front
 ae 270 0
-saveview $back
+saveview $side
+ae -90 90 
+saveview $top
 ae 30 30
 saveview $iso
 EOF
 
 # adding "env /usr/brlcad/dev-7.25.0/bin/" in the beginning of 2nd line of raytracing file
 # and sending output to temporary file.
-sed '2cenv /usr/brlcad/dev-7.24.1/bin/rt -M \\' $front > tempFile1
-sed '2cenv /usr/brlcad/dev-7.24.1/bin/rt -M \\' $side > tempFile2
-sed '2cenv /usr/brlcad/dev-7.24.1/bin/rt -M \\' $back > tempFile3
-sed '2cenv /usr/brlcad/dev-7.24.1/bin/rt -M \\' $iso > tempFile4
+sed '2cenv /usr/brlcad/dev-7.25.0/bin//rt -M \\' $front > tempFile1 
+sed '2cenv /usr/brlcad/dev-7.25.0/bin//rt -M \\' $side > tempFile2
+sed '2cenv /usr/brlcad/dev-7.25.0/bin//rt -M \\' $top > tempFile3
+sed '2cenv /usr/brlcad/dev-7.25.0/bin//rt -M \\' $iso > tempFile4
 
 # removing original raytracing file.
-rm $front
-rm $side
-rm $back
-rm $iso
+rm $front $side $top $iso
+
 
 # changing name of temporary file to that of original file.
 mv tempFile1 $front
 mv tempFile2 $side
-mv tempFile3 $back
+mv tempFile3 $top
 mv tempFile4 $iso
 
 # give executable permissions to raytrace file.
-chmod 777 $front
-chmod 777 $side
-chmod 777 $back
-chmod 777 $iso
+chmod 777 $front $side $top $iso
+
 
 # executing raytrace file. This will produce raw image in .pix tormat and a log
 #file.
 ./$front
 ./$side
-./$back
+./$top
 ./$iso
 
 # converting .pix file to png image using BRLCAD commands.
-env /usr/brlcad/dev-7.24.1/bin/pix-png < $front.pix > $front.png
-env /usr/brlcad/dev-7.24.1/bin/pix-png < $side.pix > $side.png
-env /usr/brlcad/dev-7.24.1/bin/pix-png < $back.pix > $back.png
-env /usr/brlcad/dev-7.24.1/bin/pix-png < $iso.pix > $iso.png
+env /usr/brlcad/dev-7.25.0/bin//pix-png < $front.pix > $front.png 
+env /usr/brlcad/dev-7.25.0/bin//pix-png < $side.pix > $side.png
+env /usr/brlcad/dev-7.25.0/bin//pix-png < $top.pix > $top.png
+env /usr/brlcad/dev-7.25.0/bin//pix-png < $iso.pix > $iso.png
 
-chmod 777 $front.png
-chmod 777 $side.png
-chmod 777 $back.png
-chmod 777 $iso.png
+chmod 777 $front.png $side.png $top.png $iso.png
+
 
 
 # copying final image to public_html for displaying on browser.
-cp $front.png ../cgi-images/
-cp $side.png ../cgi-images/
-cp $back.png ../cgi-images/
-cp $iso.png ../cgi-images/
+cp $front.png ../cgi-images/ $side.png ../cgi-images/ $top.png ../cgi-images/ $iso.png ../cgi-images/cp $top.png ../cgi-images/
 
 # using html <img src tag, display image on browser.
 echo "<img src = ../cgi-images/$front.png>"
@@ -134,14 +120,13 @@ echo "<img src = ../cgi-images/$side.png>"
 
 echo "<h1>side</h1>"
 
-echo "<img src = ../cgi-images/$back.png>"
+echo "<img src = ../cgi-images/$top.png>"
 
-echo "<h1>back</h1>"
+echo "<h1>top</h1>"
 
 echo "<img src = ../cgi-images/$iso.png>"
 
 echo "<h1>iso</h1>"
-
 
 
 
